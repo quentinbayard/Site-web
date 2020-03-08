@@ -1,0 +1,45 @@
+body {
+	display:grid;
+	grid-template-rows: 1fr 4fr;
+}
+.link:hover{
+	font-style: italic;
+}
+
+#haut {
+	grid-row: 1;
+	color: white;
+
+}
+#page {
+	grid-row: 2;
+	font-family: Verdana, sans-serif;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	/*justify-content: space-between;*/
+	align-items: stretch;
+	flex: 1;
+}
+main {
+	color: white;
+	padding: 20px;
+	order: 1;
+	background: linear-gradient(#99ff33 25%, #bfff80 );
+	flex: 3;
+}
+
+aside {
+	color: white;
+	padding: 20px;
+	order: 2;
+	flex-grow: 3;
+	background: linear-gradient(#994d00, #cc6600);
+	flex: 1;
+
+}
+h2 {
+	font-family: Arial, sans-serif;
+	color: black;
+}
+
